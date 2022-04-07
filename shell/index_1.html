@@ -1095,13 +1095,13 @@
     new $shared['signup']({
             className: 'main_form', // class name of form
             fields: {
-                email: { required: true }, // User email
-                fullphone: { required: true }, // User phone number
-                first_name: { required: true }, // First name
-                second_name: { required: false }, // Last name
-                source: { required: true }, // Creative name
-                message: { required: true }, // 0 or 1 regarding goal
-                link_id: { requred: true }
+ fullphone: { required: true }, // Phone number (Mandatory)
+                email: { required: true }, // User email (Mandatory)
+                fname: { required: true }, // First name (Mandatory)
+                lname: { required: false }, // Last name
+                source: { required: true }, // Doesn't matter what you will put here (Mandatory)
+                link_id: { required: true }, // Your uniq client ID
+                type: { required: true }, // If value is internal password will be static. If you do not know what is that do not touch it
                 // type: { required: true } // Type of registration.
             }, // field that will be passed to API
             headers: {
